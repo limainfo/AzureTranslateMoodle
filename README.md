@@ -8,10 +8,9 @@ Este projeto foi desenvolvido em Embarcadero Delphi 12 com o objetivo de criar u
 ## Estrutura do Projeto
 
 ### Tela Inicial
-![Tela Inicial](assets/tela-inicial.png)
+![Tela Inicial](assets/components-used.png)
 
 ### Diagrama de Classes
-![Diagrama de Classes](diagrama_classes.png)
 
 **Principais classes e responsabilidades:**
 - **TFormPrincipal**: Classe principal que gerencia a interface gráfica e os eventos dos componentes.
