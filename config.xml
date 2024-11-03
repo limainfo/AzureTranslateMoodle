@@ -1,7 +1,7 @@
 ﻿<Config>
   <Database>
     <Port>3306</Port>
-	<Host>localhost</Host>
+    <Host>localhost</Host>
     <Database>moodle</Database>
     <User>root</User>
     <Password>password</Password>
