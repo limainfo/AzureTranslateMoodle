@@ -1,0 +1,391 @@
+object FormPrincipal: TFormPrincipal
+  Left = 0
+  Top = 0
+  Caption = 'Translate Moodle MySql'
+  ClientHeight = 725
+  ClientWidth = 600
+  FormFactor.Width = 320
+  FormFactor.Height = 480
+  FormFactor.Devices = [Desktop]
+  OnCreate = FormCreate
+  OnShow = FormShow
+  DesignerMasterStyle = 0
+  object ScaledLayout1: TScaledLayout
+    Align = Client
+    OriginalWidth = 600.000000000000000000
+    OriginalHeight = 725.000000000000000000
+    Size.Width = 600.000000000000000000
+    Size.Height = 725.000000000000000000
+    Size.PlatformDefault = False
+    object FlowLayout1: TFlowLayout
+      Align = Client
+      Margins.Left = 6.000000000000000000
+      Margins.Top = 6.000000000000000000
+      Margins.Right = 6.000000000000000000
+      Margins.Bottom = 6.000000000000000000
+      Size.Width = 588.000000000000000000
+      Size.Height = 713.000000000000000000
+      Size.PlatformDefault = False
+      TabOrder = 0
+      Justify = Left
+      JustifyLastLine = Left
+      FlowDirection = LeftToRight
+      object LayoutTitulo: TLayout
+        Size.Width = 588.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 1
+        object RectangleTitulo: TRectangle
+          Fill.Color = claCornflowerblue
+          Size.Width = 588.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Thickness = 3.000000000000000000
+          OnClick = lbTituloClick
+          object lbTitulo: TLabel
+            StyledSettings = [Family]
+            Size.Width = 588.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.Size = 15.000000000000000000
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claAzure
+            TextSettings.HorzAlign = Center
+            Text = 'Translate questions Moodle'
+            TabOrder = 0
+            OnClick = lbTituloClick
+          end
+        end
+      end
+      object LayoutLanguages: TLayout
+        Position.Y = 50.000000000000000000
+        Size.Width = 588.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 6
+        object Label1: TLabel
+          Align = FitLeft
+          StyledSettings = [Family, Size, FontColor]
+          Size.Width = 200.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Source Language'
+          TabOrder = 1
+        end
+        object CBoxLanguages: TComboBox
+          Align = FitRight
+          Position.X = 200.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnChange = CBoxLanguagesChange
+        end
+      end
+      object LayoutDestino: TLayout
+        Position.Y = 100.000000000000000000
+        Size.Width = 588.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 2
+        object lbMetas: TLabel
+          Align = Left
+          StyledSettings = [Family, Size, FontColor]
+          Size.Width = 200.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Destination Language'
+          TabOrder = 1
+        end
+        object CBoxTo: TComboBox
+          Align = FitRight
+          Position.X = 200.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 0
+          OnChange = CBoxToChange
+        end
+      end
+      object LayoutIdMoodle: TLayout
+        Position.Y = 150.000000000000000000
+        Size.Width = 588.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 5
+        object Label4: TLabel
+          Align = FitLeft
+          StyledSettings = [Family, Size, FontColor]
+          Size.Width = 200.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          TextSettings.Font.StyleExt = {00070000000000000004000000}
+          Text = 'Id question Moodle'
+          TabOrder = 0
+        end
+        object EditIdMoodle: TEdit
+          Touch.InteractiveGestures = [LongTap, DoubleTap]
+          Align = FitRight
+          TabOrder = 1
+          Position.X = 200.000000000000000000
+          Size.Width = 388.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+        end
+      end
+      object LayoutBotoes: TLayout
+        Position.Y = 200.000000000000000000
+        Size.Width = 588.000000000000000000
+        Size.Height = 50.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 0
+        object RectangleBtGrafico: TRectangle
+          Align = Client
+          Fill.Color = claAliceblue
+          Size.Width = 588.000000000000000000
+          Size.Height = 50.000000000000000000
+          Size.PlatformDefault = False
+          Stroke.Thickness = 3.000000000000000000
+          object buttonGrafico: TSpeedButton
+            Align = Client
+            CanFocus = True
+            Cursor = crHandPoint
+            StyledSettings = [Family, Size, FontColor]
+            Size.Width = 588.000000000000000000
+            Size.Height = 50.000000000000000000
+            Size.PlatformDefault = False
+            Text = 'Translate'
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.Trimming = None
+            OnClick = buttonGraficoClick
+          end
+        end
+      end
+      object LayoutOrigem: TLayout
+        Position.Y = 250.000000000000000000
+        Size.Width = 588.000000000000000000
+        Size.Height = 250.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 4
+        object Panel1: TPanel
+          Align = Top
+          Size.Width = 588.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label2: TLabel
+            Align = FitLeft
+            StyledSettings = [Family, Size, FontColor]
+            Size.Width = 265.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Text = 'Text Moodle'
+            TabOrder = 2
+          end
+          object lbTranslateSuported: TLabel
+            Align = FitLeft
+            StyledSettings = [Family, Size]
+            Position.X = 265.000000000000000000
+            Size.Width = 136.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claSilver
+            TextSettings.HorzAlign = Center
+            Text = 'Transalation Suported'
+            TabOrder = 1
+          end
+          object lbLanguageDetected: TLabel
+            Align = FitLeft
+            StyledSettings = [Family, Size]
+            Position.X = 401.000000000000000000
+            Size.Width = 136.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.FontColor = claSilver
+            TextSettings.HorzAlign = Center
+            Text = 'Language'
+            TabOrder = 0
+          end
+        end
+        object Panel2: TPanel
+          Align = Client
+          Size.Width = 588.000000000000000000
+          Size.Height = 209.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object MemoSource: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            TextSettings.WordWrap = True
+            Align = Client
+            Size.Width = 588.000000000000000000
+            Size.Height = 209.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 0
+            Viewport.Width = 584.000000000000000000
+            Viewport.Height = 205.000000000000000000
+          end
+        end
+      end
+      object LayoutTranslate: TLayout
+        Position.Y = 500.000000000000000000
+        Size.Width = 588.000000000000000000
+        Size.Height = 250.000000000000000000
+        Size.PlatformDefault = False
+        TabOrder = 3
+        object Panel3: TPanel
+          Align = Top
+          Size.Width = 588.000000000000000000
+          Size.Height = 41.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 2
+          object Label3: TLabel
+            Align = Client
+            StyledSettings = [Family, Size, FontColor]
+            Size.Width = 588.000000000000000000
+            Size.Height = 41.000000000000000000
+            Size.PlatformDefault = False
+            TextSettings.Font.StyleExt = {00070000000000000004000000}
+            TextSettings.HorzAlign = Center
+            Text = 'Translated'
+            TabOrder = 1
+          end
+        end
+        object Panel4: TPanel
+          Align = Client
+          Size.Width = 588.000000000000000000
+          Size.Height = 209.000000000000000000
+          Size.PlatformDefault = False
+          TabOrder = 3
+          object MemoTranslated: TMemo
+            Touch.InteractiveGestures = [Pan, LongTap, DoubleTap]
+            DataDetectorTypes = []
+            TextSettings.WordWrap = True
+            Align = Client
+            Size.Width = 588.000000000000000000
+            Size.Height = 209.000000000000000000
+            Size.PlatformDefault = False
+            TabOrder = 1
+            Viewport.Width = 584.000000000000000000
+            Viewport.Height = 205.000000000000000000
+          end
+        end
+      end
+    end
+  end
+  object Loading: TAniIndicator
+    Align = Client
+    Size.Width = 600.000000000000000000
+    Size.Height = 725.000000000000000000
+    Size.PlatformDefault = False
+    Style = Circular
+    Visible = False
+  end
+  object RESTTranslate: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    Params = <>
+    ConnectTimeout = 6000
+    SynchronizedEvents = False
+    Left = 512
+    Top = 514
+  end
+  object RESTRequestTranslate: TRESTRequest
+    Client = RESTTranslate
+    Params = <>
+    Response = RESTResponseTranslate
+    SynchronizedEvents = False
+    Left = 512
+    Top = 570
+  end
+  object RESTResponseTranslate: TRESTResponse
+    Left = 512
+    Top = 626
+  end
+  object RESTGetLanguages: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    Params = <>
+    ConnectTimeout = 6000
+    SynchronizedEvents = False
+    Left = 72
+    Top = 506
+  end
+  object RESTRequestGetLanguages: TRESTRequest
+    Client = RESTGetLanguages
+    Params = <>
+    Response = RESTResponseTranslate
+    SynchronizedEvents = False
+    Left = 72
+    Top = 562
+  end
+  object RESTResponseLanguage: TRESTResponse
+    Left = 72
+    Top = 618
+  end
+  object RESTGetLanguageScope: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    Params = <>
+    ConnectTimeout = 6000
+    SynchronizedEvents = False
+    Left = 208
+    Top = 506
+  end
+  object RESTRequestLanguageScope: TRESTRequest
+    Client = RESTGetLanguageScope
+    Params = <>
+    Response = RESTResponseTranslate
+    SynchronizedEvents = False
+    Left = 208
+    Top = 562
+  end
+  object RESTResponseLanguaScope: TRESTResponse
+    Left = 208
+    Top = 618
+  end
+  object RESTDetectLanguage: TRESTClient
+    Accept = 'application/json, text/plain; q=0.9, text/html;q=0.8,'
+    AcceptCharset = 'utf-8, *;q=0.8'
+    Params = <>
+    ConnectTimeout = 6000
+    SynchronizedEvents = False
+    Left = 352
+    Top = 506
+  end
+  object RESTRequestDetectLanguage: TRESTRequest
+    Client = RESTDetectLanguage
+    Params = <>
+    Response = RESTResponseDetectLanguage
+    SynchronizedEvents = False
+    Left = 352
+    Top = 562
+  end
+  object RESTResponseDetectLanguage: TRESTResponse
+    Left = 352
+    Top = 618
+  end
+  object FDConnectionMySql: TFDConnection
+    Params.Strings = (
+      'DriverID=MySQL')
+    LoginPrompt = False
+    Left = 486
+    Top = 313
+  end
+  object FDQuery: TFDQuery
+    Connection = FDConnectionMySql
+    Left = 486
+    Top = 369
+  end
+  object FDPhysMySQLDriverLink1: TFDPhysMySQLDriverLink
+    VendorLib = 'libmariadb.dll'
+    Left = 486
+    Top = 433
+  end
+end

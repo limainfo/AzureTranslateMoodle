@@ -1,0 +1,21 @@
+﻿<Config>
+  <Database>
+    <Port>3306</Port>
+	<Host>localhost</Host>
+    <Database>moodle</Database>
+    <User>root</User>
+    <Password>password</Password>
+  </Database>
+  <AzureAI>
+    <BaseUrlLanguages>https://api.cognitive.microsofttranslator.com/languages</BaseUrlLanguages>
+    <BaseUrlLanguageScope>https://api.cognitive.microsofttranslator.com/languages</BaseUrlLanguageScope>
+    <BaseUrlDetect>https://api.cognitive.microsofttranslator.com/detect</BaseUrlDetect>
+    <BaseUrlTranslate>https://api.cognitive.microsofttranslator.com/translate</BaseUrlTranslate>
+    <CONTENT_TYPE_HEADER>Content-Type</CONTENT_TYPE_HEADER>
+    <CONTENT_TYPE_VALUE>application/json</CONTENT_TYPE_VALUE>
+    <SUBSCRIPTION_KEY_HEADER>Ocp-Apim-Subscription-Key</SUBSCRIPTION_KEY_HEADER>
+    <SUBSCRIPTION_KEY_VALUE>YOUR_SUBSCRIPTION_KEY</SUBSCRIPTION_KEY_VALUE>
+    <SUBSCRIPTION_REGION_HEADER>Ocp-Apim-Subscription-Region</SUBSCRIPTION_REGION_HEADER>
+    <SUBSCRIPTION_REGION_VALUE>brazilsouth</SUBSCRIPTION_REGION_VALUE>
+  </AzureAI>
+</Config>

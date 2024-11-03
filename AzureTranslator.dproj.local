@@ -1,0 +1,41 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2024/05/30 16:07:49.000.158,=C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit3.pas</Transaction>
+    <Transaction>2024/05/30 16:08:40.000.943,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit3.pas=C:\Users\User\Documents\DelphiProjects\MonitoraCripto\MonitoraMoedas.pas</Transaction>
+    <Transaction>2024/05/30 16:08:40.000.943,C:\Users\User\Documents\Embarcadero\Studio\Projects\Unit3.fmx=C:\Users\User\Documents\DelphiProjects\MonitoraCripto\MonitoraMoedas.fmx</Transaction>
+    <Transaction>2024/05/30 16:08:54.000.490,C:\Users\User\Documents\Embarcadero\Studio\Projects\Project2.dproj=C:\Users\User\Documents\DelphiProjects\MonitoraCripto\MonitorCoin.dproj</Transaction>
+    <Transaction>2024/05/31 00:43:21.000.293,=C:\Users\User\Documents\DelphiProjects\MonitoraCripto\venda.mp3</Transaction>
+    <Transaction>2024/05/31 00:43:21.000.277,=C:\Users\User\Documents\DelphiProjects\MonitoraCripto\compra.mp3</Transaction>
+    <Transaction>2024/06/03 20:40:09.000.130,=C:\Users\User\Documents\DelphiProjects\MonitoraCripto\Unit1.pas</Transaction>
+    <Transaction>2024/06/03 20:41:37.000.247,C:\Users\User\Documents\DelphiProjects\MonitoraCripto\Unit1.fmx=C:\Users\User\Documents\DelphiProjects\MonitoraCripto\Creditos.fmx</Transaction>
+    <Transaction>2024/06/03 20:41:37.000.247,C:\Users\User\Documents\DelphiProjects\MonitoraCripto\Unit1.pas=C:\Users\User\Documents\DelphiProjects\MonitoraCripto\Creditos.pas</Transaction>
+    <Transaction>2024/10/29 07:56:53.000.294,C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\AzureTranslator.dproj=C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\MonitorCoin.dproj</Transaction>
+    <Transaction>2024/11/01 14:39:49.000.785,C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\MonitoraMoedas.pas=</Transaction>
+    <Transaction>2024/11/01 14:40:10.000.943,=C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\TraduzTextos.pas</Transaction>
+    <Transaction>2024/11/02 20:19:41.000.299,=C:\Users\User\Documents\sispromii\chatgpt\www\plenario\ajax-loader.gif</Transaction>
+    <Transaction>2024/11/02 20:27:03.000.970,C:\Users\User\Documents\sispromii\chatgpt\www\plenario\ajax-loader.gif=</Transaction>
+    <Transaction>2024/11/02 20:27:12.000.095,=C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\ajax-loader.gif</Transaction>
+    <Transaction>2024/11/02 23:15:30.000.540,=C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\Vcl.Loading.pas</Transaction>
+    <Transaction>2024/11/02 23:37:28.000.553,C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\Vcl.Loading.pas=</Transaction>
+    <Transaction>2024/11/03 00:23:19.000.305,C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\venda.mp3=</Transaction>
+    <Transaction>2024/11/03 00:23:25.000.649,C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\compra.mp3=</Transaction>
+    <Transaction>2024/11/03 01:32:07.000.657,=C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\LIBMYSQL.DLL</Transaction>
+    <Transaction>2024/11/03 01:44:08.000.152,=C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\config.ini</Transaction>
+    <Transaction>2024/11/03 02:15:06.000.376,=C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\Untitled1.xml</Transaction>
+    <Transaction>2024/11/03 02:15:19.000.611,C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\Untitled1.xml=C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\config.xml</Transaction>
+    <Transaction>2024/11/03 02:30:31.000.091,C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\config.xml=</Transaction>
+    <Transaction>2024/11/03 02:30:31.000.091,=C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\config.xml</Transaction>
+    <Transaction>2024/11/03 02:30:31.000.075,C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\config.ini=</Transaction>
+    <Transaction>2024/11/03 02:30:31.000.107,=C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\LIBMYSQL.DLL</Transaction>
+    <Transaction>2024/11/03 02:30:31.000.091,C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\LIBMYSQL.DLL=</Transaction>
+    <Transaction>2024/11/03 02:30:31.000.091,=C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\config.ini</Transaction>
+    <Transaction>2024/11/03 02:30:31.000.075,C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\ajax-loader.gif=</Transaction>
+    <Transaction>2024/11/03 02:43:37.000.035,C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\config.ini=</Transaction>
+    <Transaction>2024/11/03 03:12:01.553,=C:\Users\User\Documents\DelphiProjects\AzureIA-Translator\libmariadb.dll</Transaction>
+  </Transactions>
+	<ActiveMobileDevice>
+		<NoProfile Android="" Android64=""/>
+	</ActiveMobileDevice>
+	<BT_BuildType>Debug</BT_BuildType>
+</BorlandProject>

@@ -1,0 +1,3 @@
+ConfigXml RCDATA "config.xml"
+LibMysql RCDATA "LIBMYSQL.DLL"
+LibMariaDb RCDATA "libmariadb.dll"
