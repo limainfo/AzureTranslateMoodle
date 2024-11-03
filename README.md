@@ -7,6 +7,9 @@ Este projeto foi desenvolvido em Embarcadero Delphi 12 com o objetivo de criar u
 
 ## Estrutura do Projeto
 
+### Tela Inicial
+![Tela Inicial](assets/tela-inicial.png)
+
 ### Diagrama de Classes
 ![Diagrama de Classes](diagrama_classes.png)
 
@@ -18,18 +21,32 @@ Este projeto foi desenvolvido em Embarcadero Delphi 12 com o objetivo de criar u
 - **TDatabaseConnector**: Gerencia a conexão com o banco de dados MySQL.
 
 ### Diagrama de Sequência
-![Diagrama de Sequência](diagrama_sequencia.png)
+```mermaid
+sequenceDiagram
+    participant Usuario
+    participant InterfaceDelphi as Interface Delphi
+    participant Azure as Servidor Azure
+    participant MySQL as Banco de Dados Moodle
 
-**Explicação da Sequência**:
-1. O executável é iniciado e o arquivo `config.xml` é extraído, junto com a biblioteca `mariadb.dll`.
-2. Os dados do `config.xml` são lidos e utilizados para configurar as conexões REST e de banco de dados.
-3. O software se conecta ao endpoint `https://api.cognitive.microsofttranslator.com/languages` para listar os idiomas suportados e exibi-los no `ComboBox` Source Language.
-4. O `ComboBox` Source Language seleciona automaticamente o idioma padrão `en` (English), gerando um evento OnChange que carrega os idiomas suportados para tradução.
-5. O `ComboBox` Destination Language é preenchido com os idiomas traduzíveis com base no idioma de origem selecionado.
-6. O usuário insere o ID da questão do Moodle e clica em `Translate`.
-7. O software faz a conexão com o banco de dados MySQL do Moodle e obtém o texto do enunciado da questão.
-8. O texto obtido é enviado ao endpoint `https://api.cognitive.microsofttranslator.com/detect` para verificação do idioma e compatibilidade de tradução.
-9. Se a tradução for suportada, o texto é enviado ao endpoint `https://api.cognitive.microsofttranslator.com/translate` e o resultado é exibido no Memo Translated.
+    Usuario->>InterfaceDelphi: Inicia o executável
+    InterfaceDelphi->>InterfaceDelphi: Extrai config.xml e mariadb.dll
+    InterfaceDelphi->>InterfaceDelphi: Lê config.xml e carrega as bibliotecas
+    InterfaceDelphi->>Azure: Requisição para listar idiomas suportados
+    Azure-->>InterfaceDelphi: Retorna lista de idiomas
+    InterfaceDelphi->>InterfaceDelphi: Exibe idiomas no ComboBox Source Language
+    InterfaceDelphi->>InterfaceDelphi: Evento OnChange - carrega idiomas traduzíveis
+    InterfaceDelphi->>Azure: Solicita idiomas traduzíveis para o idioma de origem
+    Azure-->>InterfaceDelphi: Retorna idiomas traduzíveis
+    InterfaceDelphi->>InterfaceDelphi: Exibe idiomas no ComboBox Destination Language
+    Usuario->>InterfaceDelphi: Insere ID da questão e clica em Translate
+    InterfaceDelphi->>MySQL: Conecta e busca texto do enunciado
+    MySQL-->>InterfaceDelphi: Retorna texto do enunciado
+    InterfaceDelphi->>Azure: Envia texto para detecção de idioma
+    Azure-->>InterfaceDelphi: Retorna idioma detectado e suporte à tradução
+    InterfaceDelphi->>Azure: Envia texto para tradução
+    Azure-->>InterfaceDelphi: Retorna texto traduzido
+    InterfaceDelphi->>InterfaceDelphi: Exibe resultado no Memo Translated
+```
 
 ## Estrutura do Arquivo `config.xml`
 ```xml
@@ -56,7 +73,7 @@ Este projeto foi desenvolvido em Embarcadero Delphi 12 com o objetivo de criar u
 ```
 
 ## Como Utilizar
-1. **Configuração Inicial**: Configure o arquivo `config.xml` de acordos com os enpoints e credencias utilizadas na Azure e os dados da conexão com seu banco de dados MySql do Moodle.
+1. **Configuração Inicial**: Configure o arquivo `config.xml` de acordo com os endpoints e credenciais utilizadas na Azure e os dados da conexão com seu banco de dados MySQL do Moodle.
 2. **Interface Gráfica**:
    - **Source Language**: Escolha o idioma de origem.
    - **Destination Language**: O idioma de destino será carregado automaticamente.
