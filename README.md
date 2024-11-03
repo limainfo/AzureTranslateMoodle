@@ -83,9 +83,17 @@ sequenceDiagram
    - Detecta o idioma e verifica a tradutibilidade.
    - Traduz o texto e exibe o resultado no Memo Translated.
 
+## Lista de Desejos (Versão 0.1)
+Este projeto foi desenvolvido como parte de um desafio de projeto da Digital Innovation One (DIO). As melhorias planejadas incluem:
+1. Ampliar a possibilidade de traduzir as questões do banco de questões do Moodle de uma categoria específica em lote.
+2. Realizar o update das traduções no banco de questões do Moodle MySQL.
+3. Incluir animações do andamento do progresso das atualizações.
+
 ## Contribuição
 Sinta-se à vontade para enviar `pull requests` ou abrir `issues` para sugerir melhorias. Este projeto é uma ótima oportunidade para aprender e explorar a integração do Delphi com APIs REST modernas.
 
 ## Licença
 Este projeto está licenciado sob a [MIT License](LICENSE).
+
+
 
